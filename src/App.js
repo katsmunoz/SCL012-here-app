@@ -1,15 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import location from './here.js'
 
 function App() {
+ 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          WheelGo!
         </p>
+        <nav.link>
+
+        </nav.link>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
