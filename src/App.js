@@ -6,13 +6,18 @@ import {useFirebaseApp} from 'reactfire';
 function App() {
   const firebase = useFirebaseApp();
   console.log(firebase)
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          WheelGo!
         </p>
+        <nav.link>
+
+        </nav.link>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
