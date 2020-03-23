@@ -5,7 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import firebaseConfig from './firebase-config';
 import {FirebaseAppProvider} from 'reactfire';
-
 ReactDOM.render((
     <FirebaseAppProvider firebaseConfig={firebaseConfig}>
         <Suspense fallback={'Conectando con la app...'}>
