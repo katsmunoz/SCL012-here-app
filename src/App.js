@@ -1,35 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+
 import {useFirebaseApp} from 'reactfire';
 //App.js
 import DisplayMapClass from './DisplayMapClass';
 
+import Auth from './Auth';
+import {useUser} from 'reactfire';
 
 
 function App() {
-  const firebase = useFirebaseApp();
-  console.log(firebase)
-
+  const user= useUser();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         <code>WheelGo!</code> 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-       <DisplayMapClass/>
+      {user && <p>Bienvenido {user.email}</p>}
+      
+    <Auth />
+    
+     <DisplayMapClass/>
+      
+
     </div>
   );
 }
 
-export default App;
+
+
+   
+
+
