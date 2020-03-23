@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       {user && <p>Bienvenido {user.email}</p>}
       <Auth />
+
     </div>
   );
 }
