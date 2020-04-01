@@ -1,6 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
+
 import Auth from './Auth';
 import {useUser} from 'reactfire';
 
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       {user && <p>Bienvenido {user.email}</p>}
       <Auth />
+
 
     </div>
   );
