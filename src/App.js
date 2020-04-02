@@ -9,6 +9,7 @@ import DisplayMapFC from './components/DisplayMapFC';
 import Ajustes from './components/Ajustes';
 import Otros from './components/Otros';
 
+
 function App() {
   return (
     <Router>
@@ -25,3 +26,4 @@ function App() {
   )
 }
 export default App;
+

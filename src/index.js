@@ -11,6 +11,7 @@ import Carga from './components/Carga';
 ReactDOM.render((
     <FirebaseAppProvider firebaseConfig={firebaseConfig}>
         <Suspense fallback={<Carga />}>
+
             <App />
         </Suspense>
     </FirebaseAppProvider>
