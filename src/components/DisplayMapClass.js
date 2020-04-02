@@ -7,11 +7,6 @@ class DisplayMapClass extends React.Component {
         map: null
     };
 
-
-    addMarkersToMap(map) {
-        const parisMarker = new H.map.Marker({lat:48.8567, lng:2.3508});
-        map.addObject(parisMarker);
-
     componentDidMount() {
         const H = window.H;
         const platform = new H.service.Platform({
@@ -58,4 +53,4 @@ class DisplayMapClass extends React.Component {
         />;
     }
 }
-export default DisplayMapClass
+export default DisplayMapClass;
