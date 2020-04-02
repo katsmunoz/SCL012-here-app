@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ES">
 
 <head>
     <meta charset="utf-8" />
@@ -15,15 +15,17 @@
     <!-----------------------API HERE Fleet Telematics Custom Locations------------->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
 
-
-
+    <!-- Links mapa here DisplayMapFC-->
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
 
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -36,6 +38,11 @@
     -->
 
     <title>WheelGo</title>
+
+    <!-- Link de bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Link de iconos Font awesome -->
+    <script src="https://kit.fontawesome.com/7afafb9834.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -53,7 +60,16 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
+    <!-- Links de bootstrap -->
+    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin />
 
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin />
+
+    <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin />
+
+    <script>
+        var Alert = ReactBootstrap.Alert;
+    </script>
 </body>
 
 </html>
