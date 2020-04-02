@@ -7,10 +7,15 @@ class DisplayMapClass extends React.Component {
         map: null
     };
 
+
+    addMarkersToMap(map) {
+        const parisMarker = new H.map.Marker({lat:48.8567, lng:2.3508});
+        map.addObject(parisMarker);
+
     componentDidMount() {
         const H = window.H;
         const platform = new H.service.Platform({
-            apikey: "{gQ2xoeeDN1C0vXBT6A8Us08CLQj1wsQMAgfQeqlz1oY}"
+            apikey: "gQ2xoeeDN1C0vXBT6A8Us08CLQj1wsQMAgfQeqlz1oY"
         });
 
         const defaultLayers = platform.createDefaultLayers();
@@ -18,8 +23,13 @@ class DisplayMapClass extends React.Component {
         const map = new H.Map(
             this.mapRef.current,
             defaultLayers.vector.normal.map, {
-                center: { lat: 50, lng: 5 },
-                zoom: 4,
+                center: {
+                    lat: -33.4282564,
+                    lng: -70.6194612,
+                    startingPoint: null,
+                    endingPoint: null, 
+                },
+                zoom: 18,
                 pixelRatio: window.devicePixelRatio || 1
             }
         );
@@ -43,7 +53,7 @@ class DisplayMapClass extends React.Component {
     render() {
         return <div ref = { this.mapRef }
         style = {
-            { height: "500px" }
+            { height: "900px" }
         }
         />;
     }
