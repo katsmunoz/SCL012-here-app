@@ -5,9 +5,13 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import firebaseConfig from './firebase-config';
 import {FirebaseAppProvider} from 'reactfire';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Carga from './components/Carga';
+
 ReactDOM.render((
     <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-        <Suspense fallback={'Conectando con la app...'}>
+        <Suspense fallback={<Carga />}>
+
             <App />
         </Suspense>
     </FirebaseAppProvider>

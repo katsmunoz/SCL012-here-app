@@ -1,47 +1,159 @@
-.App {
+* {
+    box-sizing: border-box!important;
+}
+
+
+/* ESTILO DE LOADING DE APP */
+
+.container-carga {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carga {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+/* ESTILOS PARA REGISTRY */
+
+.logo_registry {
+    width: 20%;
+    display: block;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.btn_registry {
+    background-color: #EEECEC!important;
+    color: #73746E!important;
+}
+
+.labels {
+    color: #73746E;
+}
+
+
+/* FIN ESTILOS PARA REGISTRY */
+
+
+/* ESTILOS PARA LOGIN */
+
+.logo_login {
+    width: 40%;
+    display: block;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.labels_login {
+    color: #73746E;
+    font-size: 11px;
+    /* display: block; */
+}
+
+hr {
+    display: inline-block;
+}
+
+.btn_google {
+    background-color: #EA423F!important;
+    color: #FFFFFF!important;
+}
+
+
+/* FIN ESTILOS PARA LOGIN */
+
+
+/* ESTILOS PÁGINA GENERAL */
+
+.weel {
+    font-size: 14px;
+}
+
+.square_general {
+    color: #FFFFFF;
+    background-color: rgb(255, 255, 255);
+    width: 49%;
+    margin-bottom: 3%;
     text-align: center;
 }
 
-.ingreso {
-    width: 25%;
-    background-color: aqua;
+.square_general img {
+    /* width: 50%; */
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.square {
+    margin-bottom: 90px;
+}
+
+.titulos {
+    color: #73746E;
+    /* text-decoration: none; */
+}
+
+.titulos:hover {
+    text-decoration: none;
 }
 
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ESTILOS PARA MENU ICONOS */
+
+.menu {
+    position: fixed;
+    bottom: -10px;
+    background: rgb(255, 255, 255);
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
+.icono_menu {
+    font-size: 150%;
+    align-items: center;
+    color: #DCDBDB;
+}
+
+.titulo_menu {
+    font-size: 12px;
+    color: #918E8E;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons .icono_menu:hover {
+    color: #000000;
+}
 
 
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
+/* ESTILOS PARA VISTA AJUSTES */
+
+.arrow {
+    font-size: 120%;
+    color: #000000;
+}
+
+.subtitulos,
+.cerrar_sesion {
+    font-size: 12px;
+    color: #73746E!important;
+}
 
 
-/* .App-link {
-  color: #61dafb;
-} */
+/* ESTILOS PARA VISTA OTROS FILTROS */
 
+.gps {
+    font-size: 140%;
+    color: #EA423F;
+}
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.titulos_otros {
+    color: #73746E;
+}

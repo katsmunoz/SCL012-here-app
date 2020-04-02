@@ -99,4 +99,6 @@ class Map extends Component {
     );
   }
 }
+
 export default Location;
+
