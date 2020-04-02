@@ -1,29 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {useFirebaseApp} from 'reactfire';
+import DisplayMapClass from './components/DisplayMapClass';
+import {BrowserRouter as Router , Switch, Route} from "react-router-dom";
+import Login from './components/Login';
+import Registry from './components/Registry';
+import General from './components/General';
+import DisplayMapFC from './components/DisplayMapFC';
+import Ajustes from './components/Ajustes';
+import Otros from './components/Otros';
 
 function App() {
-  const firebase = useFirebaseApp();
-  console.log(firebase)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Login}/>
+        <Route exact path="/Mapa" component={DisplayMapClass}/>
+        <Route exact path="/Crear_cuenta" component={Registry} />
+        <Route exact path="/Home" component={General}/>
+        <Route exact path="/Mapa_dos" component={DisplayMapFC}/>
+        <Route exact path="/Ajustes" component={Ajustes}/>
+        <Route exact path="/Otros" component={Otros}/>
+      </Switch>
+    </Router>
+  )
 }
-
 export default App;
