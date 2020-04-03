@@ -38,7 +38,9 @@ const General = () => {
                 </div>
 
                 <div className="regular shadow square_general">
-                    <Link to="/Mapa_dos" className="col-12">
+
+                    <Link to="/Mapa" className="col-12">
+
                         <img src={farmacias} className="img-fluid w-50" alt=""/>
                         <span className="d-block titulos">Farmacias</span>
                     </Link>

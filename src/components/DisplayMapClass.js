@@ -1,5 +1,7 @@
 // src/DisplayMapClass.js
 import * as React from 'react';
+import{Link} from 'react-router-dom';
+
 
 class DisplayMapClass extends React.Component {
     mapRef = React.createRef();
@@ -18,6 +20,7 @@ class DisplayMapClass extends React.Component {
         const map = new H.Map(
             this.mapRef.current,
             defaultLayers.vector.normal.map, {
+
                 center: {
                     lat: -33.4282564,
                     lng: -70.6194612,
@@ -25,6 +28,7 @@ class DisplayMapClass extends React.Component {
                     endingPoint: null, 
                 },
                 zoom: 18,
+
                 pixelRatio: window.devicePixelRatio || 1
             }
         );
@@ -46,11 +50,52 @@ class DisplayMapClass extends React.Component {
     }
 
     render() {
-        return <div ref = { this.mapRef }
-        style = {
-            { height: "900px" }
-        }
-        />;
+
+        return (
+            <div className="container-fluid square">
+            <div className="row">
+                <nav className="navbar navbar-light bg-light">
+                    <form className="form-inline d-flex justify-content-between">
+                    <Link to= "/Home">
+                        <i className="arrow fas fa-arrow-left"></i>
+                    </Link>
+                        <p className="col-2 pt-3 weel">Farmacias</p>
+                        <input className="form-control col-6 ml-4" type="search" placeholder="Buscar" aria-label="Search"/>
+                        <button className="btn btn-outline col-2" type="submit"><i className="fas fa-search"></i></button>
+                    </form>
+                </nav>
+            </div>
+            <div ref = { this.mapRef }
+                style = { { height: "700px" }}/>
+
+            
+                <div className="row d-flex justify-content-around mt-3 mb-2 menu pt-3 pr-4">
+
+                    <Link to="/Home">
+                        <div className="icons">
+                            <i className="icono_menu fas fa-map-marker-alt"></i>
+                            <p className="titulo_menu">Explorar</p>
+                        </div>
+                    </Link>
+
+                    <div className="icons">
+                        <i className="icono_menu fas fa-star"></i>
+                        <p className="titulo_menu">Favoritos</p>
+                    </div>
+
+                    <Link to="/Ajustes">
+                        <div className="icons">
+                            <i className="icono_menu fas fa-cog"></i>
+                            <p className="titulo_menu">Ajustes</p>
+                        </div>
+                    </Link>
+
+                </div>
+            </div>
+                
+
+        )
     }
+
 }
 export default DisplayMapClass;

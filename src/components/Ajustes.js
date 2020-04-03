@@ -32,9 +32,11 @@ const Ajustes = () => {
             </div>
             <div className="mb-3">
                 {user &&
-                <Link to= "/">
-                    <a href onClick={logout} className="cerrar_sesion">Cerrar sesión</a>
-                </Link>
+
+                    <Link to= "/">
+                        <a href onClick={logout} className="cerrar_sesion">Cerrar sesión</a>
+                    </Link>
+
                 }
             </div>
             <div>
@@ -53,7 +55,14 @@ const Ajustes = () => {
                 <p className="subtitulos mb-0">Idioma y región</p>
             </div>
             <div>
-                <p className="subtitulos">Activar modo oscuro</p>
+                <p className="subtitulos mb-0">Activar modo oscuro</p>
+            </div>
+            <div>
+                <p className="subtitulos mb-0">Centro de ayuda</p>
+            </div>
+            <div>
+                <p className="subtitulos">Privacidad y licencias</p>
+
             </div>
 
             {/* Menú fijo para app */}
