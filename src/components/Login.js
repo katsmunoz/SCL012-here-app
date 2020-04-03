@@ -5,7 +5,7 @@ import{Link} from 'react-router-dom';
 import logo from '../img/logo.png';
 
 export default (Login) =>{
-    
+
     const [email, setEmail]= useState('');
     const [password, setPassword]= useState ('');
 
@@ -28,6 +28,7 @@ export default (Login) =>{
         <div>
             { 
                 !user && 
+
             <div className="container">
                 
                 <div>

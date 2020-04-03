@@ -32,9 +32,11 @@ const Ajustes = () => {
             </div>
             <div className="mb-3">
                 {user &&
+
                     <Link to= "/">
                         <a href onClick={logout} className="cerrar_sesion">Cerrar sesión</a>
                     </Link>
+
                 }
             </div>
             <div>
@@ -60,6 +62,7 @@ const Ajustes = () => {
             </div>
             <div>
                 <p className="subtitulos">Privacidad y licencias</p>
+
             </div>
 
             {/* Menú fijo para app */}

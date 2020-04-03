@@ -2,6 +2,7 @@
 import * as React from 'react';
 import{Link} from 'react-router-dom';
 
+
 class DisplayMapClass extends React.Component {
     mapRef = React.createRef();
     state = {
@@ -19,8 +20,15 @@ class DisplayMapClass extends React.Component {
         const map = new H.Map(
             this.mapRef.current,
             defaultLayers.vector.normal.map, {
-                center: { lat: -33.4282564, lng: -70.6194612 },
-                zoom: 20,
+
+                center: {
+                    lat: -33.4282564,
+                    lng: -70.6194612,
+                    startingPoint: null,
+                    endingPoint: null, 
+                },
+                zoom: 18,
+
                 pixelRatio: window.devicePixelRatio || 1
             }
         );
@@ -42,6 +50,7 @@ class DisplayMapClass extends React.Component {
     }
 
     render() {
+
         return (
             <div className="container-fluid square">
             <div className="row">
@@ -87,7 +96,6 @@ class DisplayMapClass extends React.Component {
 
         )
     }
-
 
 }
 export default DisplayMapClass;

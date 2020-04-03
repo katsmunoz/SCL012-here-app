@@ -8,7 +8,7 @@ import General from './components/General';
 import DisplayMapFC from './components/DisplayMapFC';
 import Ajustes from './components/Ajustes';
 import Otros from './components/Otros';
-// import Google from './components/Google';
+
 
 function App() {
   return (
@@ -21,9 +21,9 @@ function App() {
         <Route exact path="/Mapa_dos" component={DisplayMapFC}/>
         <Route exact path="/Ajustes" component={Ajustes}/>
         <Route exact path="/Otros" component={Otros}/>
-        {/* <Route exact path="/Login_google" component={Google}/> */}
       </Switch>
     </Router>
   )
 }
 export default App;
+
